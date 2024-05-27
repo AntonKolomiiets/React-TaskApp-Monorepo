@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import "./src/assets/fonts/satoshi.css";
+
+.TaskApp {
+  display: flex;
+
+  flex-direction: column;
+  margin: 4%;
+  align-items: center;
+  
+}
+
+.ta_background {
+  display: flex;
+  flex-direction: column;
+}
+
+.ta_buttons {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 0.3rem;
+}
+
+.main {
+  /* font-family: "Nunito", sans-serif; */
+  font-family: "Satoshi-Light", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  width: 360px;
+  height: auto;
+  padding: 2%;
+  background-color: #ffffff;
+  display: flex;
+
+  justify-content: center;
+  border-radius: 15px;
+  /* border: 1px solid; */
+  /* border-color: black; */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.ta_table {
+  text-transform: capitalize;
+  text-align: left;
+  margin: auto;
+  /* background-image: url("./nnnoise.svg"); */
+  background-size: contain;
+  background-color: #ffffff;
+  width: 350px;
+  border-collapse: collapse;
+}
+
+
+.ta_table td {
+  width: 100%;
+  border-bottom: 1px solid;
+
+  border-color: #a9b6b75b;
+  
+ 
+  /* border-color: #a9b6b706; */
+  /* box-shadow: 0px -0.2px 2px rgba(211, 211, 211, 0.906); */
+}
+/* .ta_table td:first-child {
+  width: 79%;
+}
+.ta_table td:last-child {
+  border-color: #ffffff;
+  box-shadow: none;
+} */
+
+.last-item td {
+  border-bottom: none;
+}
+
+.ta_button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.ta_button:hover {
+  filter: brightness(95%);
+  cursor: pointer;
+}
+.ta_button:active {
+  box-shadow: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.ta_button_div {
+  display: flex;
+}
+
+#ta_table_row {
+ display: flex;
+ 
+ /* justify-content: space-around; */
+}

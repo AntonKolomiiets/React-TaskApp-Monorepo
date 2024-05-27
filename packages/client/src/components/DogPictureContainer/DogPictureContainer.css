@@ -1,0 +1,23 @@
+.dpc_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1rem solid #dcb7c0;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  box-shadow: 2px 2px 5px #c3c3c3;
+}
+.dpc_main:hover {
+  filter: brightness(70%);
+}
+.dpc_main:active {
+  transform: scale(98%);
+  box-shadow: 1px 1px 5px #c3c3c3;
+}
+
+.dpc_image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
