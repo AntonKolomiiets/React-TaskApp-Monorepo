@@ -1,5 +1,7 @@
 import "./TableDiv.css";
 
+
+// Task
 const TableDiv = ({ task, editFucntion, delFunction }) => {
   const renderPriority = (priority: any) => {
     return [...Array(priority)].map(() => "!");

@@ -7,6 +7,9 @@ import Modal from "../../components/Modal/Modal";
 import SortMenu from "../../components/SortMenu/SortMenu";
 
 const API = `http://localhost:3000/tasks/`;
+// TODO
+// click away
+// fix new-line discription
 
 // Function to render tasks
 function renderTasks(tasks, openModal, deleteTask) {
@@ -79,6 +82,7 @@ export default function TaskApp() {
     setCurrentTask(task);
     setIsModalOpen(true);
   };
+  
   // addTask
   const addTask = async (data) => {
     const token = localStorage.getItem("token");
@@ -210,7 +214,6 @@ export default function TaskApp() {
           {isModalOpen && (
             <Modal
               mode={mode}
-              isOpen={isModalOpen}
               onClose={() => setIsModalOpen(false)}
               task={currentTask}
               addTask={addTask}
@@ -220,7 +223,12 @@ export default function TaskApp() {
           <div className="TaskApp">
             <div className="ta_background">
               <div className="ta_buttons">
-                <button className="ta_button" onClick={() => openModal("create")}>+</button>
+                <button
+                  className="ta_button"
+                  onClick={() => openModal("create")}
+                >
+                  +
+                </button>
 
                 <SortMenu sortTasks={sortTasks} />
               </div>

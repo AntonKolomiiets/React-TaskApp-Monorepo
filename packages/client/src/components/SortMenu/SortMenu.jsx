@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./SortMenu.css";
 
+
+// Drop down menu
 const SortMenu = ({ sortTasks }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [flagDateCreated, setFlagDateCreated] = useState(false);

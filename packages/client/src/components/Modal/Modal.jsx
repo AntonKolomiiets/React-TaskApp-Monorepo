@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./Modal.css";
 
-const Modal = ({ mode, isOpen, onClose, task, addTask, editTask }) => {
+const Modal = ({ mode, onClose, task, addTask, editTask }) => {
+  // Mode feclaration
   const editMode = mode === "edit";
 
+// dota ver
   const [data, setData] = useState({
     title: editMode ? task.title : "",
     description: editMode ? task.description : "",
@@ -12,27 +14,12 @@ const Modal = ({ mode, isOpen, onClose, task, addTask, editTask }) => {
     status: editMode ? task.status : 0,
   });
 
-  // const handleAddTask = () => {
-  //   const token = localStorage.getItem("token");
-  //   if (token) {
-  //     const decodedToken = jwt_decode(token);
-  //     const user_id = decodedToken.user_id; // Assuming user_id is a field in your token
-  //     addTask({
-  //       title: data.title,
-  //       status: "0",
-  //       priority: "0",
-  //     });
-  //   } else {
-  //     console.error("No token found, please log in");
-  //   }
-  // };
-
   const handleSave = (e) => {
     e.preventDefault();
     editMode ? editTask(data, task) : addTask(data);
     onClose();
   };
-
+// write to data
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -94,10 +81,10 @@ const Modal = ({ mode, isOpen, onClose, task, addTask, editTask }) => {
               onChange={handleChange}
             />
           </div>
-        <div className="m_buttons">
-          <button type="submit">Save</button>
-          <button onClick={onClose}>Cancel</button>
-        </div>
+          <div className="m_buttons">
+            <button type="submit">Save</button>
+            <button onClick={onClose}>Cancel</button>
+          </div>
         </form>
       </div>
     </div>

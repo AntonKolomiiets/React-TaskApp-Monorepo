@@ -99,6 +99,9 @@
   box-shadow: none;
   margin: 0.1rem;
 }
+.m_modal button:hover {
+  filter:brightness(95%)
+}
 
 @keyframes openModal {
   0% {

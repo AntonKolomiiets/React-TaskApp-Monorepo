@@ -1,16 +1,13 @@
 import { useState } from "react";
 
+// Login form
 const Auth = () => {
-  // const [isLogin, setIsLogin] = useState(true);
-  // const [error, setError] = useState(null);
+ 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  // const viewLogin = (status) => {
-  //   setError(null);
-  //   setIsLogin(status);
-  // };
+
 
   const handleSubmit = async (event, endpoint) => {
     event.preventDefault();
