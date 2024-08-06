@@ -36,6 +36,11 @@ Make sure you have the following installed on your machine:
     npm start
     ```
 
+4. For faster testing use Login and Password:
+
+    Anton, 123
+    
+
 ## Features
 
 ### Client (React.js)
