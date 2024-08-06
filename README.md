@@ -10,7 +10,9 @@ This monorepo contains a Task App built with React.js for the frontend and Expre
 
 ## Demo
 
-(https://github.com/AntonKolomiiets/React-TaskApp-Monorepo/edit/main/demo.gif)
+![demo](https://github.com/user-attachments/assets/8127b0b2-3fe8-4026-abef-1efc30aa37ee)
+
+
 
 ## Getting Started
 
