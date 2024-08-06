@@ -8,6 +8,10 @@ This monorepo contains a Task App built with React.js for the frontend and Expre
 - An SQLite3 database for data storage.
 - A monorepo structure to manage both client and server codebases.
 
+## Demo
+
+(https://github.com/AntonKolomiiets/React-TaskApp-Monorepo/edit/main/demo.gif)
+
 ## Getting Started
 
 ### Prerequisites
